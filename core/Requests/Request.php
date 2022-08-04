@@ -1,7 +1,7 @@
 <?php
 
-class Request {
-
+class Request
+{
     public $request;
 
     public function __construct()
@@ -18,6 +18,12 @@ class Request {
         return $this->request;
     }
 
-}
+    public function has($key)
+    {
+    if (!isset($this->request[$key])) {
+        return false;
+    }
 
-   
+    return true;
+    }
+}
