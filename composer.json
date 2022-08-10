@@ -1,0 +1,19 @@
+{
+    "name": "flmezei/simple_route",
+    "description": "This package resolve routes and requests in a simple way",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Flmezei\\SimpleRoute\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "flmezei",
+            "email": "flmezei@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.3"
+    }
+}
