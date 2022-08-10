@@ -4,7 +4,8 @@
     "type": "library",
     "autoload": {
         "psr-4": {
-            "Flmezei\\SimpleRoute\\": "src/"
+            "Flmezei\\SimpleRoute\\": "src/",
+            "App\\": "App"
         }
     },
     "authors": [
