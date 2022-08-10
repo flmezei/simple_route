@@ -17,5 +17,3 @@ print_r('<pre>');
 print_r($request->path());
 print_r('<pre>');
 print_r($request->accepts());
-
-?>

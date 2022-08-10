@@ -4,7 +4,6 @@ namespace Flmezei\SimpleRoute\Core\Requests;
 
 class Request implements RequestInterface
 {
-
     public $request;
 
     public $files;
@@ -73,15 +72,18 @@ class Request implements RequestInterface
         return $this->server()['REQUEST_URI'];
     }
 
-    public function method() : string {
+    public function method(): string
+    {
         return $this->server()['REQUEST_METHOD'];
     }
 
-    public function accepts() : array {
+    public function accepts(): array
+    {
         return RequestService::explodeAccepts($this->server()['HTTP_ACCEPT']);
     }
-    
-    public function ip() :string {
+
+    public function ip(): string
+    {
         return $this->server()['REMOTE_ADDR'];
     }
 }

@@ -1,7 +1,9 @@
 <?php
-namespace Flmezei\SimpleRoute\Core\Requests;
-interface RequestInterface {
 
+namespace Flmezei\SimpleRoute\Core\Requests;
+
+interface RequestInterface
+{
     /**
      * input
      * return all inputs received by request
@@ -13,7 +15,7 @@ interface RequestInterface {
      * has
      * return a boolen based if key exist over request
      */
-    public function has(string $key) : bool;
+    public function has(string $key): bool;
 
     /**
      * file
@@ -29,7 +31,7 @@ interface RequestInterface {
      * @param string $key
      * @return boolean
      */
-    public function hasFile(string $key) : bool;
+    public function hasFile(string $key): bool;
 
     /**
      * server
@@ -37,41 +39,40 @@ interface RequestInterface {
      *
      * @return array
      */
-    public function server() : array;
+    public function server(): array;
 
     /**
      * baseUri
-     * return the host of url address 
+     * return the host of url address
      * @return string
      */
-    public function baseUrl() : string;
+    public function baseUrl(): string;
 
     /**
      * path
      * return the uri of url adress
      * @return string
      */
-    public function path() : string;
+    public function path(): string;
 
     /**
      * method
      * return the method of request
      * @return string
      */
-    public function method() : string; //retornara o verbo http para a solicitação
+    public function method(): string; //retornara o verbo http para a solicitação
 
     /**
      * accepts
      * return the accepts of request
      * @return array
      */
-    public function accepts() : array; 
-    
+    public function accepts(): array;
+
     /**
      * ip
      * return the client ip
      * @return string
      */
-    public function ip() :string; //retorna o ip do cliente que fez o request
-    
+    public function ip(): string; //retorna o ip do cliente que fez o request
 }
