@@ -76,4 +76,5 @@ interface RequestInterface {
      * @return string
      */
     public function ip() :string; //retorna o ip do cliente que fez o request
+    
 }

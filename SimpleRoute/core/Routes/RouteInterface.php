@@ -58,4 +58,3 @@ interface RouteInterface {
      */
     static function resource(string $route, string $class);
 }
- 
